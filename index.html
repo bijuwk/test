@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <span class="logo">Welcome</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hello, and <span class="accent">welcome</span>.</h1>
+      <p>We're glad you're here. Take a look around and get to know what we do.</p>
+      <a class="btn" href="#about">Get started</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About us</h2>
+      <p>This is a simple, fast welcome site. Swap in your own story here: who you are, what you offer, and why it matters to your visitors.</p>
+    </section>
+
+    <section id="features" class="section">
+      <h2>What you'll find</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Simple</h3>
+          <p>Clean layout with no clutter, so your message comes first.</p>
+        </article>
+        <article class="card">
+          <h3>Fast</h3>
+          <p>Plain HTML and CSS. No build step, loads instantly.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Looks good on phones, tablets and desktops, in light or dark mode.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Get in touch</h2>
+      <p>Have a question? Reach out any time.</p>
+      <a class="btn btn-outline" href="mailto:hello@example.com">Say hello</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Welcome. All rights reserved.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
